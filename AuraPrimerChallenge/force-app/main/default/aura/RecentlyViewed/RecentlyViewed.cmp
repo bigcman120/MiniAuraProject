@@ -1,0 +1,13 @@
+<aura:component controller="recentlyViewedService">
+    <aura:attribute name="objectId" type="String"></aura:attribute>
+    <aura:attribute name="objectType" type="String"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.getRecentlyViewed}"/>
+
+    <lightning:recordForm
+        recordId="{!v.objectId}"
+        objectApiName="{!v.objectType}"
+        layoutType="Compact"
+        mode="readonly"
+        columns="6">
+    </lightning:recordForm>
+</aura:component>

@@ -1,0 +1,4 @@
+({
+    getRecentlyViewedHelper : function(component) {
+    },
+})
